@@ -10,6 +10,11 @@ namespace Api.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public ValuesController(BastionContext context)
+        {
+
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
